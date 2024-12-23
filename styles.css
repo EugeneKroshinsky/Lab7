@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0078D4; /* Цвет, совпадающий с заголовком */
+    color: white;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.content h2 {
+    color: #0078D4; /* Тот же цвет, что и у заголовка */
+}
+
+#data-list {
+    margin-top: 20px;
+}
+
+.data-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button.add,
+button.save {
+    background-color: #0078D4; /* Цвет кнопок "Добавить" и "Сохранить" */
+    color: white;
+}
+
+button.edit {
+    background-color: #28a745; /* Зеленая кнопка для редактирования */
+    color: white;
+}
+
+button.delete {
+    background-color: #dc3545; /* Красная кнопка для удаления */
+    color: white;
+}
+
+button.cancel {
+    background-color: #dc3545; /* Красная кнопка для отмены */
+    color: white;
+}
+
+#add-form, #edit-form {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}

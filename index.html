@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AИС - Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AИС - Главная страница</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск</a></li>
+                <li><a href="#">Администрирование</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Добро пожаловать в AИС!</h2>
+            <p>Выберите действие в меню.</p>
+        </section>
+        <section id="data-list">
+            <h2>Список пациентов</h2>
+            <div id="data-container"></div>
+            <button class="add" id="add-patient">Добавить пациента</button>
+        </section>
+
+        <!-- Форма для добавления нового пациента -->
+        <section id="add-form" style="display:none;">
+            <h2>Добавить пациента</h2>
+            <form id="add-patient-form">
+                <label for="description">Описание:</label>
+                <input type="text" id="description" required>
+
+                <label for="owner">ФИО владельца:</label>
+                <input type="text" id="owner" required>
+
+                <label for="petName">Кличка питомца:</label>
+                <input type="text" id="petName" required>
+
+                <label for="animalType">Вид животного:</label>
+                <input type="text" id="animalType" required>
+
+                <button type="button" id="save-add" class="save">Добавить</button>
+            </form>
+        </section>
+
+        <!-- Форма для редактирования пациента -->
+        <section id="edit-form" style="display:none;">
+            <h2>Редактировать пациента</h2>
+            <form id="edit-patient-form">
+                <input type="hidden" id="edit-id">
+
+                <label for="edit-description">Описание:</label>
+                <input type="text" id="edit-description" required>
+
+                <label for="edit-owner">ФИО владельца:</label>
+                <input type="text" id="edit-owner" required>
+
+                <label for="edit-petName">Кличка питомца:</label>
+                <input type="text" id="edit-petName" required>
+
+                <label for="edit-animalType">Вид животного:</label>
+                <input type="text" id="edit-animalType" required>
+
+                <button type="button" id="save-edit" class="save">Сохранить</button>
+                <button type="button" id="cancel-edit" class="cancel">Отмена</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 AИС. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
